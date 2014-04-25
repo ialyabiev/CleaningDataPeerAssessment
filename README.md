@@ -1,4 +1,4 @@
 CleaningDataPeerAssessment
 ==========================
 
-Getting and Cleaning Data, Peer Assessments 
+Getting and Cleaning Data, Peer Assessment
