@@ -1,4 +1,4 @@
-CleaningDataPeerAssessment
-==========================
+## CleaningData PeerAssessment
 
-Getting and Cleaning Data, Peer Assessment
+There are two R scripts in the project
+"run_analysis.R"" and "lib_run_analysis.R"
