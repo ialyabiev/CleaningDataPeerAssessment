@@ -1,5 +1,6 @@
 .Rproj.user
 .Rhistory
 .RData
+.html
 data/
 UCI HAR Dataset/
