@@ -50,7 +50,8 @@ The result is data frame after all transformations.
 
 __createTidyData__ function get data frame from __runAnalysis__ function and   
 creates new tidy data set with the average of each variable for each activity   
-and each subject. The function return data frame tidydata.
+and each subject. The function return data frame "tidydata" and also save
+the  data frame as  "tidy.txt" ini the working directory.
 
 Detailed descriptions of transformations both function made you can  
 read at __CodeBook.md__
