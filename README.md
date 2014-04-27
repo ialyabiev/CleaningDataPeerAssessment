@@ -56,3 +56,4 @@ the  data frame as  "tidy.txt" ini the working directory.
 Detailed descriptions of transformations both function made you can  
 read at __CodeBook.md__
 
+
