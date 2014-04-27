@@ -5,3 +5,7 @@
 *.txt
 data/
 UCI HAR Dataset/
+listofnames.md
+makeCodeBook.rmd
+*.bak
+.gitignore.bak
