@@ -1,7 +1,6 @@
  CodeBook
 ========================================================
-
-
+ 
 ## Introduction 
 
 This file describes the variables, the data,  and also transformations performed to clean up the data.  
