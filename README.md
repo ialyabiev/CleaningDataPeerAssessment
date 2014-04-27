@@ -37,13 +37,16 @@ Otherwise it will execute two function from the "lib_run_analysis.R".
 The result of working the script will be data.frames tidydata with result.  
 
 ### "lib_run_analysis.R"
-This script contain two functions: runAnalysis and createTidyData.
+This script contain two functions: 
+
+* runAnalysis 
+* createTidyData.
 
 __runAnalysis__ function collect data from various txt files, merge  
 trainig and test dataset into one block, choose subset of columns,  
 give columns headings, turned the numeric activities into activity names  
 and so on. 
-The result of function is data frame after all whose transformations.
+The result is data frame after all transformations.
 
 __createTidyData__ function get data frame from __runAnalysis__ function and   
 creates new tidy data set with the average of each variable for each activity   
