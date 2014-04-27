@@ -1,8 +1,6 @@
  CodeBook
 ========================================================
 
----------------
----------------
 
 ## Introduction 
 
@@ -23,8 +21,6 @@ Data processing is divided into two main stages, which realizes by two correspon
 
 Both functions placed into "lib_run_analysis.R" and started from the main script "run_analysis.R"
 
----------------
----------------
 
 ## Initial data
 
@@ -41,12 +37,8 @@ The obtained dataset has been randomly partitioned into two sets, where 70% of t
 
 That is our initial data.
 
----------------
----------------
 
 ## Transformations and convertions
-
----------------
 
 
 ### Step 1 and Step 2
@@ -66,14 +58,12 @@ Then we add subject and activities columns to  dTrain, dTest.
 
 And finally we merge two data frames into dataframe "data" 
 
----------------
 
 ### Step 3
 
 Reading activity names from file "activity_labels.txt". 
 Make simple substitution.  Place activity names instead of numbers. 
 
----------------
 
 ### Step 4.
 
@@ -90,7 +80,6 @@ We make only two modifications in the names and these modifications fit our goal
 
 After this last step we have our result data frame "data" with the variables, described in the next section.
 
----------------
 
 ### List of variables:
 
@@ -215,8 +204,9 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 The full description of all other variables can be found in Data Set Description of [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
+
 ### Step 5
----------------
+
 Step 5 performed by function __createTidyData__.
 
 It gets as initial data the dataframe "data" which is the result of function __runAnalysis__.(steps 1-4).  
