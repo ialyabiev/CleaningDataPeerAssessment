@@ -43,7 +43,7 @@ This script contain two functions:
 * createTidyData.
 
 __runAnalysis__ function collect data from various txt files, merge  
-trainig and test dataset into one block, choose subset of columns,  
+training and test dataset into one block, choose subset of columns,  
 give columns headings, turned the numeric activities into activity names  
 and so on. 
 The result is data frame after all transformations.
