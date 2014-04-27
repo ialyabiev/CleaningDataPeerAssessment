@@ -36,7 +36,7 @@ If the data folder wasn't found then the script stops with error message.
 Otherwise it will execute two function from the "lib_run_analysis.R".  
 The result of working the script will be data.frames tidydata with result.  
 
-### "lib_run_analysis.R"
+### lib_run_analysis.R
 This script contain two functions: 
 
 * runAnalysis 
