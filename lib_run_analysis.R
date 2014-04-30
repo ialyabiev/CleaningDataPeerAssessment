@@ -56,8 +56,11 @@ runAnalysis <- function (datafolder)
         
         # add descriptive activity names
         activityNames <- read.table(paste0(basePath,"activity_labels.txt"))
-        data[,2] <- activityNames[data[,2],2]
-        
+        levels <- as.vector(activityNames[,2])
+        # data[,2] <- activityNames[data[,2],2]
+        data[,2] <- as.vector(activityNames[data[,2],2])
+        data[,2] <- factor(data[,2],levels)
+
         message("Add descriptive activities - OK")
         
         # create variable names vector for data frame
@@ -78,9 +81,11 @@ createTidyData <- function (data){
         #data <- data.t
         
         # Create tidy data
+        #data <- data1
         message("Start creating tidy data...")
         
-        data$Activity <- as.numeric(data$Activity)
+        #data$Activity <- as.numeric(data$Activity)
+        data$Activity <- unclass(data$Activity)
         SubjectActivity <- paste(data$Subject,data$Activity,sep=".")
         #data <- data.matrix(data)
                 
@@ -92,7 +97,9 @@ createTidyData <- function (data){
         dtidy <- data.frame(dtidy)
         dtidy <- dtidy[order(dtidy$Subject,dtidy$Activity),]
         rownames(dtidy) <- NULL
-        dtidy[,2] <- activityNames[dtidy[,2],2]
+        
+        dtidy[,2] <- as.vector(activityNames[dtidy[,2],2])
+        
         #dtidy[1:2,1:4]
         message("Tidy data created - OK")
         write.table(dtidy,"dtidy.txt",sep = " ", row.names = F)
